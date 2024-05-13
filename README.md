@@ -8,7 +8,8 @@ It's a showcase site. I have made with React, TailwindCSS and EmailJs for the co
 ## Author
 [![GitHub Logo](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/Tonyac-create)
 
-https://www.linkedin.com/in/angelique-copere-dev/
+<a href="https://www.linkedin.com/in/angelique-copere-dev/" target="_blank">Mon LinkedIn</a>
+
 
 ## Available Scripts
 
