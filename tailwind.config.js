@@ -5,19 +5,18 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'black': "#000000",
-      'darkBlue': "#14213D",
-      'orange': "#FCA311",
-      'gray': "#E5E5E5",
+      'black': "#000814",
+      'darkBlue': "#001D3D",
+      'orange': "#FFC300",
+      'yellow': "#FFD60A",
       'white': "#FFFFFF"
     },
-    extend: {
-      fontFamily: {
-        'dancing-script': ["Dancing Script", 'Open Sans'],
-        'roboto': ["Roboto", 'Open Sans']
-      }
-    },
+    fontFamily: {
+      'dancing-script': ["Dancing Script", 'Open Sans'],
+      'roboto': ["Roboto", 'Open Sans']
+    }
   },
+    extend: {},
   plugins: [],
 }
 
