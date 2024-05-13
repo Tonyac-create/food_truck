@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 It's a showcase site. I have made with React, TailwindCSS and EmailJs for the contact form.
 
 ## Author
-https://github.com/Tonyac-create
+https://github.com/Tonyac-create  
 https://www.linkedin.com/in/angelique-copere-dev/
 
 ## Available Scripts
