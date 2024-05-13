@@ -1,7 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 body {
   margin: 0;
@@ -12,9 +11,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
+.homeMain {
   background-image: url(../public/pictures/cuisinier_N&B.jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-image: url(../public/pictures/cuisinier_N&B.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
 }
