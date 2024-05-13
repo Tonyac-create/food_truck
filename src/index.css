@@ -11,3 +11,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+main {
+  background-image: url(../public/pictures/cuisinier_N&B.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
