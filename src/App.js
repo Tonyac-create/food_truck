@@ -6,15 +6,14 @@ function App() {
 
   const handleHomePage = () => {
     setIsClickArrow(true);
-    
   };
 
   return (
-    <main className={isClickArrow ? "" : "homeMain"}>
-      <section className="flex flex-col items-center">
-        {isClickArrow ? (
-          <FoodTruck />
-        ) : (
+    <main className={isClickArrow ? "bg-black h-full" : "homeMain"}>
+      {isClickArrow ? (
+        <FoodTruck />
+      ) : (
+        <section className="flex flex-col items-center">
           <div className="flex flex-col items-center">
             <h1 className="text-yellow font-dancing-script text-5xl pt-10 tracking-wide text-center">
               Mon food truck
@@ -29,8 +28,8 @@ function App() {
               onClick={handleHomePage}
             />
           </div>
-        )}
-      </section>
+        </section>
+      )}
     </main>
   );
 }

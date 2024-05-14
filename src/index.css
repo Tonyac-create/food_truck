@@ -7,9 +7,14 @@ body {
   padding: 0;
   box-sizing: border-box;
   min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
+
+/* html,
+#root {
+  height: 100%;
+} */
 
 .homeMain {
   background-image: url(../public/pictures/cuisinier_N&B.jpg);
@@ -19,11 +24,7 @@ body {
 }
 
 header {
-  width: 100%;
   background-image: url(../public/pictures/cuisinier_N&B.jpg);
   background-size: cover;
   background-position: center;
-  height: 150px;
-  display: flex;
-  justify-content: space-between;
 }
