@@ -6,7 +6,7 @@ export default function FoodTruck() {
   return (
     <div>
       <Header />
-      <Element name='informations' className='h-screen m-14'>
+      <Element name='informations' className='h-screen m-14 font-roboto'>
         <p className='text-gray text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam suscipit corrupti vero ipsum quo.
           Esse, nisi magnam temporibus atque placeat praesentium fugit, ducimus illum repellendus optio quos in modi ut?</p>
         <div className='text-gray mt-3 mx-14 flex flex-col items-center'>
@@ -30,7 +30,7 @@ export default function FoodTruck() {
       </Element>
       <Element name='menu' className='h-screen m-14'>
         <h2 className='text-yellow font-dancing-script text-center text-5xl tracking-wide'>Notre carte</h2>
-        <h3 className='text-yellow font-dancing-script text-center text-3xl tracking-wide mt-2'>Nos burgers</h3>
+        <h3 className='text-yellow font-dancing-script text-center text-3xl tracking-wide my-2'>Nos burgers</h3>
         <CardProduct />
       </Element>
     </div>
