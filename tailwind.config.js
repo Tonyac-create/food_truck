@@ -22,6 +22,9 @@ module.exports = {
     boxShadow: {
       'around': '0 0 25px 0 #FFC300',
     },
+    zIndex: {
+      '1000': '1000',
+    }
   },
     extend: {},
   plugins: [],
