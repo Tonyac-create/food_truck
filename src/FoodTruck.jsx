@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 import { Element } from 'react-scroll'
 import CardProduct from './components/CardProduct'
+import { burgers, meals } from './products'
 export default function FoodTruck() {
   return (
     <div>
@@ -31,7 +32,28 @@ export default function FoodTruck() {
       <Element name='menu' className='h-screen m-14'>
         <h2 className='text-yellow font-dancing-script text-center text-5xl tracking-wide'>Notre carte</h2>
         <h3 className='text-yellow font-dancing-script text-center text-3xl tracking-wide my-2'>Nos burgers</h3>
-        <CardProduct />
+        <CardProduct items={burgers}/>
+        <h3 className='text-yellow font-dancing-script text-center text-3xl tracking-wide my-2'>Nos plats</h3>
+        <CardProduct items={meals}/>
+        <div className='rounded-lg bg-gray-200'>
+          <div>
+            <h3>Garnitures</h3>
+            <ul>
+              <li>Frites maison</li>
+              <li>Légumes de saison</li>
+              <li>Salade, tomates</li>
+            </ul>
+          </div>
+          <div>
+          <h3>Sauces maison</h3>
+          <ul>
+            <li>Echalotes, vin rouge</li>
+            <li>Moutarde</li>
+            <li>Burger</li>
+            <li>Roquefort</li>
+          </ul>
+          </div>
+        </div>
       </Element>
     </div>
   )

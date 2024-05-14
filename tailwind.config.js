@@ -20,7 +20,7 @@ module.exports = {
       '45': '-45deg',
     },
     boxShadow: {
-      'around': '0 0 35px 0 #FFC300',
+      'around': '0 0 25px 0 #FFC300',
     },
   },
     extend: {},
