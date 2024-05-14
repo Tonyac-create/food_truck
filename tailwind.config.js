@@ -18,7 +18,10 @@ module.exports = {
     },
     rotate: {
       '45': '-45deg',
-    }
+    },
+    boxShadow: {
+      'around': '0 0 35px 0 #FFC300',
+    },
   },
     extend: {},
   plugins: [],

@@ -48,13 +48,18 @@ export default function CardProduct() {
     setCurrentIndex(newIndex);
   };
 
+  const handleBurger = (index) => {
+    console.log("click");
+    setCurrentIndex(index)
+  }
+
   return (
-    <div className='relative bg-gray rounded-lg'>
+    <div className='relative bg-gray rounded-lg shadow-around'>
       <div>
-        <img className='absolute top-[50%] left-5 size-5' onClick={prevSlide} src="../arrow-left-solid.svg" alt="flèche gauche" />
+        <img className='absolute top-[30%] left-5 size-5 hover:scale-125' onClick={prevSlide} src="../arrow-left-solid.svg" alt="flèche gauche" />
       </div>
       <div>
-        <img className='absolute top-[50%] right-5 size-5' onClick={nextSlide} src="../arrow-right-solid-black.svg" alt="flèche gauche" />
+        <img className='absolute top-[30%] right-5 size-5 hover:scale-125' onClick={nextSlide} src="../arrow-right-solid-black.svg" alt="flèche gauche" />
       </div>
       {
         burgers.map((burger, index) => (
@@ -63,8 +68,12 @@ export default function CardProduct() {
             <p className='font-bold tracking-wide text-lg mt-2'>{burger.name}</p>
             <p className='text-center mt-1'>{burger.description}</p>
             <span className='border-2 border-orange rounded-md bg-orange text-white font-semibold tracking-wide mt-2 py-1 px-2'>{burger.price} € avec garnitures</span>
+            <div className='flex gap-2 mt-3'>
+              {burgers.map((_, subIndex) => {
+                return <i key={subIndex}  onClick={() => handleBurger(subIndex)} class={`fa-solid fa-circle ${subIndex === currentIndex ? "circleOrange" : ""}`}></i>
+              })}
+            </div>
           </div>
-
         ))
       }
     </div>
