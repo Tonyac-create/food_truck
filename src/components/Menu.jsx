@@ -10,7 +10,7 @@ export default function Menu() {
         <CardProduct items={burgers}/>
         <h3 className='text-yellow font-dancing-script text-center text-3xl tracking-wide my-2'>Nos plats</h3>
         <CardProduct items={meals}/>
-        <div className='rounded-lg bg-gray text-black flex flex-row p-2'>
+        <div className='rounded-lg bg-gray text-black flex flex-row p-2 max-w-[340px]'>
           <div className='w-1/2 flex flex-col items-center border-r-2 border-r-orange pr-1'>
             <h3 className='font-bold tracking-wide'>Garnitures</h3>
             <ul className='text-center'>

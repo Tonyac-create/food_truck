@@ -22,10 +22,11 @@ function App() {
               Découvrez notre concept !
             </p>
             <img
-              className="size-8 mt-3 animate-pulse"
+              className="size-8 mt-3 animate-pulse cursor-pointer"
               src="./arrow-right-solid.svg"
               alt="arrow"
               onClick={handleHomePage}
+              title="Aller sur le site"
             />
           </div>
         </section>

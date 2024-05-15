@@ -1,8 +1,11 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import ModalForm from './Modal'
 
 export default function FormContact() {
+    const [message, setMessage] = useState("")
     const form = useRef()
+    const [isOpenModal, setIsOpenModal] = useState(false)
 
     const sendEmail = (e) => {
         e.preventDefault()
@@ -13,9 +16,12 @@ export default function FormContact() {
             .then(
                 () => {
                     console.log("SUCCESS")
+                    setIsOpenModal(true)
+                    setMessage("Message envoyé !")
                 },
                 (error) => {
                     console.log("FAILED..", error.text)
+                    setMessage("Erreur dans l'envoi du message")
                 }
             )
     }
@@ -65,6 +71,9 @@ export default function FormContact() {
                     aria-label='Envoyez votre message'
                     className='bg-orange text-black mt-3 py-1 w-1/2 rounded-md font-medium hover:bg-yellow'>Envoyer</button>
             </form>
+            {isOpenModal && (
+                <ModalForm setIsOpenModal={setIsOpenModal} isOpenModal={isOpenModal} checkSend={message} />
+            )}
         </div>
     )
 }
