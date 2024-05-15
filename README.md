@@ -10,6 +10,14 @@ It's a showcase site. I have made with React, TailwindCSS and EmailJs for the co
 
 <a href="https://www.linkedin.com/in/angelique-copere-dev/">Mon LinkedIn</a>
 
+## Screenshot
+Accueil mobile  
+  
+![](./public/Screenshot_Home_Mobile_Mon_Food_Truck.png)  
+
+Mobile  
+
+![](./public/Screenshot_Mobile_Mon_Food_Truck.png)
 
 ## Available Scripts
 
@@ -22,11 +30,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
