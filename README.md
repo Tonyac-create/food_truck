@@ -3,10 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Review
-It's a showcase site. I have made with React, TailwindCSS and EmailJs for the contact form.
-
-## Next step
-Make the responsive(tablet & desktop)
+It's a responsive showcase site. I have made with React, TailwindCSS and EmailJs for the contact form.
 
 ## Author
 [![GitHub Logo](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/Tonyac-create)
