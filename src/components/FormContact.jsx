@@ -10,7 +10,7 @@ export default function FormContact() {
     const sendEmail = (e) => {
         e.preventDefault()
         emailjs
-            .sendForm('service_e5oc7dj', 'template_aw18zae', form.current, {
+            .sendForm('service_8kkjg8p', 'template_aw18zae', form.current, {
                 publicKey: 'dA9HyPg4PFOJOIO5Y'
             })
             .then(
