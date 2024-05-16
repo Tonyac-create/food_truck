@@ -19,11 +19,11 @@ export default function CardProduct({ items }) {
   }
 
   return (
-    <div className='relative max-w-[340px]'>
+    <div className='relative w-[330px] h-[360px]'>
       <div>
-        <img className='absolute top-[20%] left-5 size-5 hover:scale-125' onClick={prevSlide} src="../arrow-left-solid.svg" alt="flèche gauche" />
+        <img className='absolute top-[50%] size-5 hover:scale-125' onClick={prevSlide} src="../arrow-left-solid.svg" alt="flèche gauche" />
       </div>
-      <div className='bg-gray rounded-lg shadow-around my-10'>
+      <div className='bg-gray rounded-lg shadow-around mx-[22px]'>
         {
           items.map((item, index) => (
             <div key={index} className={`rounded-lg bg-gray-200 flex flex-col items-center p-4 font-roboto transition-opacity duration-500 ${index === currentIndex ? 'opacity-100' : 'opacity-0'} ${index === currentIndex ? 'block' : 'hidden'}`}>
@@ -41,7 +41,7 @@ export default function CardProduct({ items }) {
         }
       </div>
       <div>
-        <img className='absolute top-[20%] right-5 size-5 hover:scale-125' onClick={nextSlide} src="../arrow-right-solid-black.svg" alt="flèche droite" />
+        <img className='absolute top-[50%] right-0 size-5 hover:scale-125' onClick={nextSlide} src="../arrow-right-solid.svg" alt="flèche droite" />
       </div>
     </div>
   )
