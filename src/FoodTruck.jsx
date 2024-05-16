@@ -6,9 +6,16 @@ import Menu from './components/Menu'
 import Events from './components/Events'
 import FormContact from './components/FormContact'
 export default function FoodTruck() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
   return (
     <div>
       <Header />
+      <img onClick={scrollToTop} className='size-8 fixed bottom-5 right-1 animate-pulse' src="../arrow-up-solid.svg" alt="flèche vers le haut" />
       <Element name='informations' className='h-full mt-8 font-roboto'>
         <Informations />
       </Element>
