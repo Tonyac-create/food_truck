@@ -14,7 +14,6 @@ export default function Header() {
     return (
         <>
             <header className='w-full h-36 flex justify-between items-start md:h-24'>
-            {/* fixed top-0 z-[1000] */}
                 <h1 className="text-yellow text-3xl font-dancing-script font-bold pt-2 pl-2 md:text-5xl md:text-center md:w-full md:my-auto tracking-wide">
                     Mon food truck
                 </h1>
@@ -38,10 +37,10 @@ export default function Header() {
                 }
             </header >
             <nav className='mr-4 mt-4 font-semibold hidden text-white md:flex md:justify-around'>
-                <Link to="informations" smooth={true} duration={500} className=' hover:text-orange'>Informations pratiques</Link>
-                <Link to="menu" smooth={true} duration={500} className=' hover:text-orange'>Notre carte</Link>
-                <Link to="events" smooth={true} duration={500} className=' hover:text-orange'>Evénements passés</Link>
-                <Link to="contact" smooth={true} duration={500} className=' hover:text-orange'>Contact</Link>
+                <Link to="informations" smooth={true} duration={500} className=' hover:text-orange cursor-pointer'>Informations pratiques</Link>
+                <Link to="menu" smooth={true} duration={500} className=' hover:text-orange cursor-pointer'>Notre carte</Link>
+                <Link to="events" smooth={true} duration={500} className=' hover:text-orange cursor-pointer'>Evénements passés</Link>
+                <Link to="contact" smooth={true} duration={500} className=' hover:text-orange cursor-pointer'>Contact</Link>
             </nav>
         </>
     )

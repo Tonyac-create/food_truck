@@ -3,7 +3,7 @@ import React from 'react'
 export default function Informations() {
     return (
         <div>
-            <p className='text-gray text-center pt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam suscipit corrupti vero ipsum quo.
+            <p className='text-gray text-center pt-4 mx-14 lg:mx-24'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam suscipit corrupti vero ipsum quo.
                 Esse, nisi magnam temporibus atque placeat praesentium fugit, ducimus illum repellendus optio quos in modi ut?</p>
             <div className='text-gray mt-3 mx-14 flex flex-col items-center'>
                 <p className='text-center'>Venez me retrouver du mardi au samedi de 18h à 22h aux adresses suivantes :</p>
