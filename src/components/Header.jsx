@@ -21,10 +21,10 @@ export default function Header() {
                 {isBurgerMenuOpen ? (
                     <div className='flex flex-row md:hidden'>
                         <nav className='m-2 flex flex-col text-white font-semibold'>
-                            <Link to='informations' smooth={true} duration={500} className='hover:text-orange'>Informations pratiques</Link>
-                            <Link  to='menu' smooth={true} duration={500} className=' hover:text-orange'>Notre carte</Link>
-                            <Link  to='events' smooth={true} duration={500} className=' hover:text-orange'>Evénements passés</Link>
-                            <Link  to='contact' smooth={true} duration={500} className=' hover:text-orange'>Contact</Link>
+                            <Link onClick={closedMenuBurger} to='informations' smooth={true} duration={500} className='hover:text-orange'>Informations pratiques</Link>
+                            <Link onClick={closedMenuBurger} to='menu' smooth={true} duration={500} className=' hover:text-orange'>Notre carte</Link>
+                            <Link onClick={closedMenuBurger} to='events' smooth={true} duration={500} className=' hover:text-orange'>Evénements passés</Link>
+                            <Link onClick={closedMenuBurger} to='contact' smooth={true} duration={500} className=' hover:text-orange'>Contact</Link>
                         </nav>
                         <div className="size-4 m-2">
                             <img src="../xmark-solid.svg" alt="croix" onClick={closedMenuBurger} />
