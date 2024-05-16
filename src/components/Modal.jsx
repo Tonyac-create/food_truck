@@ -1,11 +1,12 @@
 import React from 'react'
 import Modal from 'react-modal'
 
-export default function ModalForm({ checkSend, isOpenModal, setIsOpenModal }) {
+export default function ModalForm({ checkSend, isOpenModal, setIsOpenModal, formRef }) {
     console.log("🚀 ~ ModalForm ~ isOpenModal:", isOpenModal)
 
     const closeModal = () => {
         setIsOpenModal(false)
+        formRef.current.reset()
     }
 
     return (
@@ -18,12 +19,13 @@ export default function ModalForm({ checkSend, isOpenModal, setIsOpenModal }) {
                     content: {
                         fontFamily: 'roboto',
                         background: '#FFC300',
-                        width: '200px',
+                        width: '300px',
                         height: '150px',
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center',
                         position: 'relative',
+                        inset: '10%',
                         border: '1px solid #ccc',
                         borderRadius: '0.5rem',
                     }

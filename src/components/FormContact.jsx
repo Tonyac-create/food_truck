@@ -21,6 +21,7 @@ export default function FormContact() {
                 },
                 (error) => {
                     console.log("FAILED..", error.text)
+                    setIsOpenModal(true)
                     setMessage("Erreur dans l'envoi du message")
                 }
             )
@@ -72,7 +73,12 @@ export default function FormContact() {
                     className='bg-orange text-black mt-3 py-1 w-1/2 rounded-md font-medium hover:bg-yellow'>Envoyer</button>
             </form>
             {isOpenModal && (
-                <ModalForm setIsOpenModal={setIsOpenModal} isOpenModal={isOpenModal} checkSend={message} />
+                <ModalForm 
+                setIsOpenModal={setIsOpenModal}
+                 isOpenModal={isOpenModal} 
+                 checkSend={message} 
+                 formRef={form}
+                 />
             )}
         </div>
     )
