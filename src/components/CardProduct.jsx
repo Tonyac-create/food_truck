@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useSwipeable } from 'react-swipeable';
 export default function CardProduct({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -18,8 +19,15 @@ export default function CardProduct({ items }) {
     setCurrentIndex(index)
   }
 
+  const handlers = useSwipeable({
+    onSwipedLeft: nextSlide,
+    onSwipedRight: prevSlide,
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
   return (
-    <div className='relative w-[330px] h-[360px]'>
+    <div className='relative w-[330px] h-[360px]' {...handlers}>
       <div className='hidden md:block'>
         <img className='absolute top-[50%] size-5 hover:scale-125' onClick={prevSlide} src="../arrow-left-solid.svg" alt="flèche gauche" />
       </div>

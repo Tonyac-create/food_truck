@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <section className="homeMain flex flex-col items-center">
             <div className="flex flex-col items-center">
-                <h1 className="text-yellow font-dancing-script text-5xl pt-10 tracking-wide text-center">
+                <h1 className="text-yellow font-dancing-script drop-shadow-sm text-5xl pt-10 tracking-wide text-center">
                     Mon food truck
                 </h1>
                 <p className="text-yellow text-2xl font-dancing-script tracking-wide mt-5">

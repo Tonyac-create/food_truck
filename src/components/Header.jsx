@@ -14,7 +14,7 @@ export default function Header() {
     return (
         <>
             <header className='headerNavBar w-full h-36 flex justify-between items-start md:h-24'>
-                <h1 className="text-yellow text-3xl font-dancing-script font-bold pt-2 pl-2 md:text-5xl md:text-center md:w-full md:my-auto tracking-wide">
+                <h1 className="text-yellow text-3xl font-dancing-script font-bold drop-shadow-sm pt-2 pl-2 md:text-5xl md:text-center md:w-full md:my-auto tracking-wide">
                     Mon food truck
                 </h1>
                 {isBurgerMenuOpen ? (
