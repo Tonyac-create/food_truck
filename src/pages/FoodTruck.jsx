@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from './components/Header'
+import Header from '../components/Header'
 import { Element } from 'react-scroll'
-import Informations from './components/Informations'
-import Menu from './components/Menu'
-import Events from './components/Events'
-import FormContact from './components/FormContact'
+import Informations from '../components/Informations'
+import Menu from '../components/Menu'
+import Events from '../components/Events'
+import FormContact from '../components/FormContact'
 export default function FoodTruck() {
   const scrollToTop = () => {
     window.scrollTo({
@@ -13,7 +13,7 @@ export default function FoodTruck() {
     })
   }
   return (
-    <div>
+    <div className='bg-black'>
       <Header />
       <img onClick={scrollToTop} className='size-8 fixed bottom-5 right-1 animate-pulse' src="../arrow-up-solid.svg" alt="flèche vers le haut" />
       <Element name='informations' className='h-full mt-8 font-roboto'>

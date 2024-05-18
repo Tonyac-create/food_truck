@@ -32,7 +32,7 @@ export default function FormContact() {
                 <h2 className='text-yellow font-dancing-script text-center text-5xl tracking-wide mb-4'>Contact</h2>
                 <p className='text-gray text-center mb-3'>Vous voulez un devis, un renseignement ou me laisser un super commentaire... <br /> C'est ici!</p>
                 <div className='flex flex-col md:w-3/4'>
-                    <label htmlFor="name" className='text-gray font-semibold mb-1'>Votre nom et prénom *</label>
+                    <label htmlFor="name" className='text-gray font-semibold mb-2'>Votre nom et prénom *</label>
                     <input
                         type="text"
                         name='name'
@@ -41,16 +41,16 @@ export default function FormContact() {
                         placeholder='Nom / Prénom'
                         className='mb-2 rounded-md pl-2 shadow-input'
                         required />
-                    <label htmlFor="email" className='text-gray font-semibold mb-1'>Votre Email *</label>
+                    <label htmlFor="email" className='text-gray font-semibold mb-2'>Votre Email *</label>
                     <input
                         type="email"
                         name='email'
                         id='email'
                         aria-label='Entrez votre adresse email'
                         placeholder='Email'
-                        className='mb-2 rounded-md pl-2'
+                        className='mb-2 rounded-md pl-2 shadow-input'
                         required />
-                    <label htmlFor="phone" className='text-gray font-semibold mb-1'>Votre téléphone *</label>
+                    <label htmlFor="phone" className='text-gray font-semibold mb-2'>Votre téléphone *</label>
                     <input
                         type="text"
                         name='phone'
@@ -59,7 +59,7 @@ export default function FormContact() {
                         placeholder='Téléphone'
                         className='mb-2 rounded-md pl-2 shadow-input'
                         required />
-                    <label htmlFor="message" className='text-gray font-semibold'>Votre message *</label>
+                    <label htmlFor="message" className='text-gray font-semibold mb-2'>Votre message *</label>
                     <textarea
                         name="message"
                         id="message"
