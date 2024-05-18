@@ -19,15 +19,14 @@ export default function CardProduct({ items }) {
   }
 
   return (
-    <div className='relative w-[330px] h-[360px]'>
+    <div className='relative w-[330px] h-[360px] overflow-x-auto'>
       <div className='hidden md:block'>
         <img className='absolute top-[50%] size-5 hover:scale-125' onClick={prevSlide} src="../arrow-left-solid.svg" alt="flèche gauche" />
       </div>
-      {/* <div className='overflow-x-auto md:overflow-x-hidden w-full flex md:block'> */}
-        <div className='overflow-x-auto md:overflow-x-hidden bg-gray rounded-lg shadow-around mx-[22px]'>
+        <div className='flex bg-gray rounded-lg shadow-around mx-[22px]'>
           {
             items.map((item, index) => (
-              <div key={index} className={`min-w-[300px] md:w-[330px] h-[360px] flex-shrink-0 rounded-lg bg-gray-200 flex flex-col items-center p-4 font-roboto transition-opacity duration-500 ${index === currentIndex ? 'opacity-100' : 'opacity-0'} ${index === currentIndex ? 'block' : 'hidden'}`}>
+              <div key={index} className={`rounded-lg bg-gray-200 flex flex-col items-center p-4 font-roboto transition-opacity duration-500 ${index === currentIndex ? 'opacity-100' : 'opacity-0'} ${index === currentIndex ? 'block' : 'hidden'}`}>
                 <img className='w-52 h-36 rounded-lg' src={item.imgSrc} alt={item.name} />
                 <p className='font-bold tracking-wide text-lg mt-2'>{item.name}</p>
                 <p className='text-center mt-1'>{item.description}</p>
@@ -41,7 +40,6 @@ export default function CardProduct({ items }) {
             ))
           }
         </div>
-      {/* </div> */}
       <div className='hidden md:block'>
         <img className='absolute top-[50%] right-0 size-5 hover:scale-125' onClick={nextSlide} src="../arrow-right-solid.svg" alt="flèche droite" />
       </div>
