@@ -18,7 +18,7 @@ body {
   min-height: 100vh;
 }
 
-header {
+.headerNavBar {
   background-image: url(../public/pictures/cuisinier_N&B.jpg);
   background-size: cover;
   background-position: center;
