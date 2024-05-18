@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Informations() {
     return (
-        <div className=' flex flex-col items-center mx-14 lg:mx-24'>
+        <div id='informations' className=' flex flex-col items-center mx-14 lg:mx-24'>
             <p className='text-gray text-balance pt-4 mx-14 lg:mx-24'>Venez découvrir notre cuisine authentique préparée avec des ingrédients frais: steak charolais 150g,
              grenouilles fraiches. Pas envie de cuisiner, notre food truck est là pour vous régaler.</p>
             <div className='text-gray mt-3 mx-14'>

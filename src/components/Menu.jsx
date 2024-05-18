@@ -4,19 +4,19 @@ import CardProduct from './CardProduct'
 
 export default function Menu() {
   return (
-    <div className='flex flex-col items-center'>
+    <main id='menu' className='flex flex-col items-center'>
       <header>
         <h2 className='text-yellow font-dancing-script text-center text-5xl tracking-wide'>Notre carte</h2>
       </header>
       <section className='flex flex-col items-center md:flex md:flex-row md:gap-8'>
         <div className='flex flex-col'>
           <header>
-            <h3 className='text-yellow font-dancing-script text-center text-3xl tracking-wide my-2'>Nos burgers</h3>
+            <h3 className='text-yellow font-roboto text-center text-2xl tracking-wide my-2'>Nos burgers</h3>
           </header>
           <CardProduct items={burgers} />
         </div>
         <div className='flex flex-col'>
-          <h3 className='text-yellow font-dancing-script text-center text-3xl tracking-wide my-2'>Nos plats</h3>
+          <h3 className='text-yellow font-roboto text-center text-2xl tracking-wide my-2'>Nos plats</h3>
           <CardProduct items={meals} />
         </div>
       </section>
@@ -43,6 +43,6 @@ export default function Menu() {
           </ul>
         </div>
       </section>
-    </div>
+    </main>
   )
 }

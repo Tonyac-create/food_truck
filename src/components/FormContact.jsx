@@ -27,7 +27,7 @@ export default function FormContact() {
             )
     }
     return (
-        <div className='flex flex-col items-center font-roboto mb-4'>
+        <div id='contact' className='flex flex-col items-center font-roboto mb-4'>
             <form ref={form} onSubmit={sendEmail} action="" className='flex flex-col'>
                 <h2 className='text-yellow font-dancing-script text-center text-5xl tracking-wide mb-4'>Contact</h2>
                 <p className='text-gray text-center mb-3'>Vous voulez un devis, un renseignement ou me laisser un super commentaire...
