@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function Informations() {
     return (
-        <div>
-            <p className='text-gray text-center pt-4 mx-14 lg:mx-24'>Venez découvrir notre cuisine authentique préparée avec des ingrédients frais: steak charolais 150g,
+        <div className=' flex flex-col items-center mx-14 lg:mx-24'>
+            <p className='text-gray text-balance pt-4 mx-14 lg:mx-24'>Venez découvrir notre cuisine authentique préparée avec des ingrédients frais: steak charolais 150g,
              grenouilles fraiches. Pas envie de cuisiner, notre food truck est là pour vous régaler.</p>
-            <div className='text-gray mt-3 mx-14 flex flex-col items-center'>
-                <p className='text-center'>Venez me retrouver du mardi au samedi de 18h à 22h aux adresses suivantes :</p>
+            <div className='text-gray mt-3 mx-14'>
+                <p className='text-balance'>Venez me retrouver du mardi au samedi de 18h à 22h aux adresses suivantes :</p>
                 <ul className='w-1/2'>
                     <li className='text-white'><span className='font-bold'>Mardi /</span> Lyon 1er</li>
 
