@@ -18,7 +18,7 @@ export default function Home() {
                     Découvrez notre concept !
                 </p>
                 <img
-                    className="size-8 mt-3 animate-pulse cursor-pointer"
+                    className="size-8 mt-3 hover:scale-150 cursor-pointer"
                     src="./arrow-right-solid.svg"
                     alt="arrow"
                     onClick={showingFoodTruckPage}

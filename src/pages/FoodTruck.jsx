@@ -15,7 +15,7 @@ export default function FoodTruck() {
   return (
     <div className='bg-black'>
       <Header />
-      <img onClick={scrollToTop} className='size-8 fixed bottom-5 right-1 animate-pulse' src="../arrow-up-solid.svg" alt="flèche vers le haut" />
+      <img onClick={scrollToTop} className='size-8 fixed bottom-5 right-2 animate-pulse' src="../arrow-up-solid.svg" alt="flèche vers le haut" />
       <Element name='informations' className='h-full mt-8 font-roboto'>
         <Informations />
       </Element>

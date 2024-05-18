@@ -30,9 +30,12 @@ export default function FormContact() {
         <div className='flex flex-col items-center font-roboto mb-4'>
             <form ref={form} onSubmit={sendEmail} action="" className='flex flex-col'>
                 <h2 className='text-yellow font-dancing-script text-center text-5xl tracking-wide mb-4'>Contact</h2>
-                <p className='text-gray text-center mb-3'>Vous voulez un devis, un renseignement ou me laisser un super commentaire... <br /> C'est ici!</p>
+                <p className='text-gray text-center mb-3'>Vous voulez un devis, un renseignement ou me laisser un super commentaire...
+                 <br /> C'est ici!
+                 <br /> Tous les champs sont obligatoires
+                 </p>
                 <div className='flex flex-col md:w-3/4'>
-                    <label htmlFor="name" className='text-gray font-semibold mb-2'>Votre nom et prénom *</label>
+                    <label htmlFor="name" className='text-gray font-semibold mb-2'>Votre nom et prénom</label>
                     <input
                         type="text"
                         name='name'
@@ -41,7 +44,7 @@ export default function FormContact() {
                         placeholder='Nom / Prénom'
                         className='mb-2 rounded-md pl-2 shadow-input'
                         required />
-                    <label htmlFor="email" className='text-gray font-semibold mb-2'>Votre Email *</label>
+                    <label htmlFor="email" className='text-gray font-semibold mb-2'>Votre Email</label>
                     <input
                         type="email"
                         name='email'
@@ -50,7 +53,7 @@ export default function FormContact() {
                         placeholder='Email'
                         className='mb-2 rounded-md pl-2 shadow-input'
                         required />
-                    <label htmlFor="phone" className='text-gray font-semibold mb-2'>Votre téléphone *</label>
+                    <label htmlFor="phone" className='text-gray font-semibold mb-2'>Votre téléphone</label>
                     <input
                         type="text"
                         name='phone'
@@ -59,7 +62,7 @@ export default function FormContact() {
                         placeholder='Téléphone'
                         className='mb-2 rounded-md pl-2 shadow-input'
                         required />
-                    <label htmlFor="message" className='text-gray font-semibold mb-2'>Votre message *</label>
+                    <label htmlFor="message" className='text-gray font-semibold mb-2'>Votre message</label>
                     <textarea
                         name="message"
                         id="message"

@@ -25,12 +25,12 @@ export default function Header() {
                             <Link onClick={closedMenuBurger} to='events' smooth={true} duration={500} className=' active:text-yellow'>Evénements passés</Link>
                             <Link onClick={closedMenuBurger} to='contact' smooth={true} duration={500} className=' active:text-yellow'>Contact</Link>
                         </nav>
-                        <div className="size-4 m-2">
+                        <div className="size-6 m-2">
                             <img src="../xmark-solid.svg" alt="croix" onClick={closedMenuBurger} />
                         </div>
                     </div>
                 ) : (
-                    <div className="size-4 m-2 md:hidden" onClick={openMenuBurger}>
+                    <div className="size-6 m-2 md:hidden" onClick={openMenuBurger}>
                         <img src="../bars-solid.svg" alt="croix" />
                     </div >
                 )

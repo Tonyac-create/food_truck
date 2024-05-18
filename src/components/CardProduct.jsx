@@ -30,7 +30,7 @@ export default function CardProduct({ items }) {
               <img className='w-52 h-36 rounded-lg' src={item.imgSrc} alt={item.name} />
               <p className='font-bold tracking-wide text-lg mt-2'>{item.name}</p>
               <p className='text-center mt-1'>{item.description}</p>
-              <span className='border-2 border-orange rounded-md bg-orange text-white font-semibold tracking-wide mt-2 py-1 px-2'>{item.price} € avec garnitures</span>
+              <span className='border-2 border-orange rounded-md bg-orange text-black font-semibold tracking-wide mt-2 py-1 px-2'>{item.price} € avec garnitures</span>
               <div className='flex gap-2 mt-3'>
                 {items.map((_, subIndex) => {
                   return <i key={subIndex} onClick={() => handleBurger(subIndex)} className={`fa-solid fa-circle ${subIndex === currentIndex ? "circleOrange" : ""}`}></i>
