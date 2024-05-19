@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-scroll'
 export default function Header() {
     const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false)
 
@@ -20,6 +19,11 @@ export default function Header() {
         }
     };
 
+    const handleCloseAndLog = (e) => {
+        closedMenuBurger()
+        handleLog(e)
+    }
+
     return (
         <>
             <header className='headerNavBar w-full h-36 flex justify-between items-start md:h-24'>
@@ -29,10 +33,10 @@ export default function Header() {
                 {isBurgerMenuOpen ? (
                     <div className='flex flex-row md:hidden'>
                         <nav className='m-2 flex flex-col text-white font-semibold'>
-                            <a onClick={handleLog} href="#informations" className='active:text-yellow'>Informations pratiques</a>
-                            <a onClick={handleLog} href='#menu' className=' active:text-yellow'>Notre carte</a>
-                            <a onClick={handleLog} href='#events' className=' active:text-yellow'>Evénements passés</a>
-                            <a onClick={handleLog} href='#contact' className=' active:text-yellow'>Contact</a>
+                            <a onClick={handleCloseAndLog} href="#informations" className='active:text-yellow'>Informations pratiques</a>
+                            <a onClick={handleCloseAndLog} href='#menu' className=' active:text-yellow'>Notre carte</a>
+                            <a onClick={handleCloseAndLog} href='#events' className=' active:text-yellow'>Evénements passés</a>
+                            <a onClick={handleCloseAndLog} href='#contact' className=' active:text-yellow'>Contact</a>
                         </nav>
                         <div className="size-6 m-2">
                             <img src="../xmark-solid.svg" alt="croix" onClick={closedMenuBurger} />

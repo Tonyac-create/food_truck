@@ -24,10 +24,11 @@ module.exports = {
     zIndex: {
       1000: "1000",
     },
-    dropShadow: {
-      sm: "0 1px 1px #FFD60A",
+  },
+  extend: {
+    maxWidth: {
+      '30ch': '30ch',
     },
   },
-  extend: {},
   plugins: [],
 };
