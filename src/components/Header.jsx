@@ -26,21 +26,21 @@ export default function Header() {
 
     return (
         <>
-            <header className='headerNavBar w-full h-36 flex justify-between items-start md:h-24'>
+            <header className='headerNavBar w-full py-2 flex justify-between items-start md:h-24'>
                 <h1 className="text-yellow text-3xl font-dancing-script font-bold pt-2 pl-2 md:text-5xl md:text-center md:w-full md:my-auto tracking-wide">
                     Mon food truck
                 </h1>
                 {isBurgerMenuOpen ? (
-                    <div className='flex flex-row md:hidden'>
+                    <div className='flex flex-col md:hidden'>
+                        <div className="size-6 m-2 flex justify-end ml-auto">
+                            <img src="../xmark-solid.svg" alt="croix" onClick={closedMenuBurger} />
+                        </div>
                         <nav className='m-2 flex flex-col text-white font-semibold'>
                             <a onClick={handleCloseAndLog} href="#informations" className='active:text-yellow'>Informations pratiques</a>
                             <a onClick={handleCloseAndLog} href='#menu' className=' active:text-yellow'>Notre carte</a>
                             <a onClick={handleCloseAndLog} href='#events' className=' active:text-yellow'>Evénements passés</a>
                             <a onClick={handleCloseAndLog} href='#contact' className=' active:text-yellow'>Contact</a>
                         </nav>
-                        <div className="size-6 m-2">
-                            <img src="../xmark-solid.svg" alt="croix" onClick={closedMenuBurger} />
-                        </div>
                     </div>
                 ) : (
                     <div className="size-6 m-2 md:hidden" onClick={openMenuBurger}>

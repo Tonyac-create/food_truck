@@ -4,20 +4,20 @@ import CardProduct from './CardProduct'
 
 export default function Menu() {
   return (
-    <main id='menu' className='flex flex-col items-center'>
+    <section id='menu' className='flex flex-col items-center'>
       <header>
         <h2 className='text-yellow font-dancing-script text-center text-5xl tracking-wide'>Notre carte</h2>
       </header>
       <section className='flex flex-col items-center md:flex md:flex-row md:gap-8'>
         <article className='flex flex-col'>
           <header>
-            <h3 className='text-yellow font-roboto text-center text-2xl tracking-wide my-2'>Nos burgers</h3>
+            <h3 className='text-yellow font-roboto text-center text-2xl tracking-wide my-4'>Nos burgers</h3>
           </header>
           <CardProduct items={burgers} />
         </article>
         <article className='flex flex-col'>
           <header>
-            <h3 className='text-yellow font-roboto text-center text-2xl tracking-wide my-2'>Nos plats</h3>
+            <h3 className='text-yellow font-roboto text-center text-2xl tracking-wide my-4'>Nos plats</h3>
           </header>
           <CardProduct items={meals} />
         </article>
@@ -45,6 +45,6 @@ export default function Menu() {
           </ul>
         </div>
       </section>
-    </main>
+    </section>
   )
 }

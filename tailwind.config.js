@@ -22,7 +22,7 @@ module.exports = {
       input: "0 0 20px 0 #FFC300",
     },
     zIndex: {
-      1000: "1000",
+      9999: "9999",
     },
   },
   extend: {
