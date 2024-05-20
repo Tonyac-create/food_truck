@@ -27,15 +27,15 @@ export default function FormContact() {
             )
     }
     return (
-        <section id='contact' className='flex flex-col items-center font-roboto my-6 mx-5 pb-4'>
+        <section id='contact' className='flex flex-col items-center font-roboto m-6 pb-4'>
             <form ref={form} onSubmit={sendEmail} action="" className='flex flex-col'>
                 <h2 className='text-yellow font-dancing-script text-center text-5xl tracking-wide mb-4'>Contact</h2>
-                <p className='text-gray text-center mb-3'>Vous voulez un devis, un renseignement ou me laisser un super commentaire...
+                <p className='text-gray text-justify mb-3'>Vous voulez un devis, un renseignement ou me laisser un super commentaire...
                     <br /> C'est ici!
                     <br /> Tous les champs sont obligatoires
                 </p>
                 <div className='flex flex-col md:w-3/4 md:mx-auto'>
-                    <label htmlFor="name" className='text-gray font-semibold mb-2'>Votre nom et prénom</label>
+                    <label htmlFor="name" className='text-white font-semibold mb-2'>Votre nom et prénom</label>
                     <input
                         type="text"
                         name='name'

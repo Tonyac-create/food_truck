@@ -14,7 +14,7 @@ export default function FoodTruck() {
   return (
     <main className='bg-black'>
       <Header />
-      <img onClick={scrollToTop} className='size-8 fixed z-9999 bottom-5 right-2 animate-pulse' src="../arrow-up-solid.svg" alt="flèche vers le haut" />
+      <img onClick={scrollToTop} className='hidden cursor-pointer md:block md:size-8 md:fixed md:z-9999 md:bottom-5 md:right-2 md:animate-pulse' src="../arrow-up-solid.svg" alt="flèche vers le haut" />
       <Informations />
       <Menu />
       <Events />

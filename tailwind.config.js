@@ -3,11 +3,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      black: "#000814",
-      darkBlue: "#001D3D",
+      black: "#0B0D0F",
+      lightBlack: "#434040",
       orange: "#FFC300",
       yellow: "#FFD60A",
-      white: "#FFFFFF",
+      white: "#FFFAFA",
       gray: "#E5E5E5",
     },
     fontFamily: {

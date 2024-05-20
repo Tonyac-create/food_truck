@@ -4,7 +4,7 @@ import CardProduct from './CardProduct'
 
 export default function Menu() {
   return (
-    <section id='menu' className='flex flex-col items-center'>
+    <section id='menu' className='flex flex-col items-center m-6'>
       <header>
         <h2 className='text-yellow font-dancing-script text-center text-5xl tracking-wide'>Notre carte</h2>
       </header>
