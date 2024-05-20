@@ -28,7 +28,7 @@ export default function CardProduct({ items }) {
 
   return (
     <div className='relative w-[330px] h-[360px] bg-gray rounded-lg shadow-around' {...handlers}>
-      <div className='hidden md:block'>
+      <div className='hidden lg:block'>
         <img className='absolute top-[50%] size-5 hover:scale-125' onClick={prevSlide} src="../arrow-left-solid.svg" alt="flèche gauche" />
       </div>
         {
@@ -46,7 +46,7 @@ export default function CardProduct({ items }) {
             </div>
           ))
         }
-      <div className='hidden md:block'>
+      <div className='hidden lg:block'>
         <img className='absolute top-[50%] right-0 size-5 hover:scale-125' onClick={nextSlide} src="../arrow-right-solid.svg" alt="flèche droite" />
       </div>
     </div>

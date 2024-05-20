@@ -34,7 +34,7 @@ export default function FormContact() {
                     <br /> C'est ici!
                     <br /> Tous les champs sont obligatoires
                 </p>
-                <div className='flex flex-col md:w-3/4 md:mx-auto'>
+                <div className='flex flex-col md:w-3/4 md:mr-auto'>
                     <label htmlFor="name" className='text-white font-semibold mb-2'>Votre nom et prénom</label>
                     <input
                         type="text"
@@ -70,12 +70,14 @@ export default function FormContact() {
                         cols="30" rows="10"
                         placeholder='Votre message...'
                         className='rounded-md pl-2 focus:outline-none focus:ring-4 ring-yellow'></textarea>
+                    <button
+                        type='submit'
+                        value="Send"
+                        aria-label='Envoyez votre message'
+                        className='bg-orange text-black mt-7 py-1 w-1/2 mx-auto rounded-md font-medium hover:bg-yellow focus:outline-none focus:ring-4 ring-yellow ring-offset-2'>
+                        Envoyer
+                    </button>
                 </div>
-                <button
-                    type='submit'
-                    value="Send"
-                    aria-label='Envoyez votre message'
-                    className='bg-orange text-black mt-7 py-1 w-1/2 mx-auto rounded-md font-medium hover:bg-yellow focus:outline-none focus:ring-4 ring-yellow ring-offset-2'>Envoyer</button>
             </form>
             {isOpenModal && (
                 <ModalForm

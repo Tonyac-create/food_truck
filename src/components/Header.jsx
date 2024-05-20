@@ -26,7 +26,7 @@ export default function Header() {
 
     return (
         <>
-            <header className='w-full bg-lightBlack py-2 flex justify-between items-center fixed top-0 z-9999 md:h-16'>
+            <header className='w-full bg-lightBlack py-2 flex justify-between items-center fixed top-0 z-9999 md:h-16 md:flex-col'>
                 <h1 className="text-yellow text-3xl font-dancing-script font-bold pl-2 mb-auto md:text-5xl md:text-center md:w-full md:my-auto tracking-wide">
                     Mon food truck
                 </h1>
@@ -48,13 +48,13 @@ export default function Header() {
                     </div >
                 )
                 }
+                <nav className='w-full bg-lightBlack font-semibold hidden text-white md:flex md:flex-row md:justify-around md:py-3'>
+                    <a href='#informations' onClick={handleLog} className=' hover:text-orange cursor-pointer'>Informations pratiques</a>
+                    <a href='#menu' onClick={handleLog} className=' hover:text-orange cursor-pointer'>Notre carte</a>
+                    <a href='"events' onClick={handleLog} className=' hover:text-orange cursor-pointer'>Evénements passés</a>
+                    <a href='#contact' onClick={handleLog} className=' hover:text-orange cursor-pointer'>Contact</a>
+                </nav>
             </header >
-            <nav className='mr-4 mt-4 font-semibold hidden text-white md:flex md:justify-around md:mt-16'>
-                <a href='#informations' onClick={handleLog} className=' hover:text-orange cursor-pointer'>Informations pratiques</a>
-                <a href='#menu' onClick={handleLog} className=' hover:text-orange cursor-pointer'>Notre carte</a>
-                <a href='"events' onClick={handleLog} className=' hover:text-orange cursor-pointer'>Evénements passés</a>
-                <a href='#contact' onClick={handleLog} className=' hover:text-orange cursor-pointer'>Contact</a>
-            </nav>
         </>
     )
 }
