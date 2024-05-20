@@ -1,12 +1,10 @@
 import React from 'react'
 import Modal from 'react-modal'
 
-export default function ModalForm({ checkSend, isOpenModal, setIsOpenModal, formRef }) {
-    console.log("🚀 ~ ModalForm ~ isOpenModal:", isOpenModal)
+export default function ModalForm({ checkSend, isOpenModal, setIsOpenModal }) {
 
     const closeModal = () => {
         setIsOpenModal(false)
-        formRef.current.reset()
     }
 
     return (
@@ -25,7 +23,7 @@ export default function ModalForm({ checkSend, isOpenModal, setIsOpenModal, form
                         flexDirection: 'column',
                         alignItems: 'center',
                         position: 'relative',
-                        inset: '10%',
+                        inset: '40%',
                         border: '1px solid #ccc',
                         borderRadius: '0.5rem',
                     }

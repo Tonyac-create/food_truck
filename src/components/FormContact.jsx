@@ -6,25 +6,36 @@ export default function FormContact() {
     const [message, setMessage] = useState("")
     const form = useRef()
     const [isOpenModal, setIsOpenModal] = useState(false)
+    const [email, setEmail] = useState("")
 
-    const sendEmail = (e) => {
+    const validateEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        return emailRegex.test(email)
+    }
+
+    const handleEmail = (e) => {
+        const { value } = e.target
+        setEmail(value)
+    }
+
+    const sendEmail = async (e) => {
         e.preventDefault()
-        emailjs
-            .sendForm('service_8kkjg8p', 'template_aw18zae', form.current, {
+        try {
+            if (!validateEmail(email)) {
+                throw new Error("Erreur dans l'email")
+            }
+            await emailjs.sendForm('service_8kkjg8p', 'template_aw18zae', form.current, {
                 publicKey: 'dA9HyPg4PFOJOIO5Y'
             })
-            .then(
-                () => {
-                    console.log("SUCCESS")
-                    setIsOpenModal(true)
-                    setMessage("Message envoyé !")
-                },
-                (error) => {
-                    console.log("FAILED..", error.text)
-                    setIsOpenModal(true)
-                    setMessage("Erreur dans l'envoi du message")
-                }
-            )
+            console.log("SUCCESS")
+            setIsOpenModal(true)
+            setMessage("Message envoyé !")
+            form.current.reset()
+        } catch (error) {
+            console.log("FAILED..", error.text)
+            setIsOpenModal(true)
+            setMessage("Veuillez vérifier votre email")
+        }
     }
     return (
         <section id='contact' className='flex flex-col items-center font-roboto m-6 pb-4'>
@@ -52,6 +63,7 @@ export default function FormContact() {
                         aria-label='Entrez votre adresse email'
                         placeholder='Email'
                         className='mb-2 rounded-md pl-2 focus:outline-none focus:ring-4 ring-yellow'
+                        onChange={handleEmail}
                         required />
                     <label htmlFor="phone" className='text-gray font-semibold mb-2'>Votre téléphone</label>
                     <input
