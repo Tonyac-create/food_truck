@@ -28,8 +28,8 @@ export default function CardProduct({ items }) {
 
   return (
     <div className='relative w-[330px] h-[360px] bg-gray rounded-lg shadow-around' {...handlers}>
-      <div className='hidden lg:block'>
-        <img className='absolute top-[50%] size-5 hover:scale-125' onClick={prevSlide} src="../arrow-left-solid.svg" alt="flèche gauche" />
+      <div className='hidden lg:block absolute top-[30%] mx-1'>
+        <img className='size-7 hover:scale-125' onClick={prevSlide} src="../arrow-left-solid.svg" alt="flèche gauche" />
       </div>
         {
           items.map((item, index) => (
@@ -46,8 +46,8 @@ export default function CardProduct({ items }) {
             </div>
           ))
         }
-      <div className='hidden lg:block'>
-        <img className='absolute top-[50%] right-0 size-5 hover:scale-125' onClick={nextSlide} src="../arrow-right-solid.svg" alt="flèche droite" />
+      <div className='hidden lg:block absolute top-[30%] right-0 mx-1'>
+        <img className='size-7 hover:scale-125' onClick={nextSlide} src="../arrow-right-solid.svg" alt="flèche droite" />
       </div>
     </div>
   )
