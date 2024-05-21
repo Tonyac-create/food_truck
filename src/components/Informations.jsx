@@ -22,7 +22,7 @@ export default function Informations() {
             <div className='md:flex md:flex-col md:w-1/2 md:px-4'>
                 <p className='text-gray text-center'>Commandez au <span className='text-yellow font-semibold tracking-wide'>01.02.03.04.05</span></p>
                 <p className='text-gray text-center mt-4'>Privatisez le food truck pour vos événements</p>
-            <img className='mt-auto rounded-md mt-1' src="../pictures/cuisinier_N&B.jpg" alt="cuisinier" />
+                <img className='hidden md:block md:rounded-md md:mt-1' src="../pictures/cuisinier_N&B.jpg" alt="cuisinier" />
             </div>
         </section>
     )
