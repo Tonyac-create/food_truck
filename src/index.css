@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100vh;
+  height: 100dvh;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 }
@@ -18,11 +18,11 @@ body {
   min-height: 100vh;
 }
 
-.headerNavBar {
+/* .headerNavBar {
   background-image: url(../public/pictures/cuisinier_N&B.jpg);
   background-size: cover;
   background-position: center;
-}
+} */
 
 .circleOrange {
   color: #FFC300;
