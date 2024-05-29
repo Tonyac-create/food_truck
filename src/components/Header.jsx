@@ -36,10 +36,10 @@ export default function Header() {
                             <img src="../xmark-solid.svg" alt="croix" onClick={closedMenuBurger} />
                         </div>
                         <nav className='m-2 flex flex-col text-white font-semibold'>
-                            <a onClick={handleCloseAndLog} href="#informations" className='active:text-yellow'>Informations pratiques</a>
-                            <a onClick={handleCloseAndLog} href='#menu' className=' active:text-yellow'>Notre carte</a>
-                            <a onClick={handleCloseAndLog} href='#events' className=' active:text-yellow'>Evénements passés</a>
-                            <a onClick={handleCloseAndLog} href='#contact' className=' active:text-yellow'>Contact</a>
+                            <a onClick={handleCloseAndLog} href="#informations" className='hover:text-yellow'>Informations pratiques</a>
+                            <a onClick={handleCloseAndLog} href='#menu' className=' hover:text-yellow'>Notre carte</a>
+                            <a onClick={handleCloseAndLog} href='#events' className=' hover:text-yellow'>Evénements passés</a>
+                            <a onClick={handleCloseAndLog} href='#contact' className=' hover:text-yellow'>Contact</a>
                         </nav>
                     </div>
                 ) : (
@@ -49,10 +49,10 @@ export default function Header() {
                 )
                 }
                 <nav className='w-full bg-lightBlack font-semibold hidden text-white md:flex md:flex-row md:justify-around md:py-3'>
-                    <a href='#informations' onClick={handleLog} className=' hover:text-orange cursor-pointer'>Informations pratiques</a>
-                    <a href='#menu' onClick={handleLog} className=' hover:text-orange cursor-pointer'>Notre carte</a>
-                    <a href='"events' onClick={handleLog} className=' hover:text-orange cursor-pointer'>Evénements passés</a>
-                    <a href='#contact' onClick={handleLog} className=' hover:text-orange cursor-pointer'>Contact</a>
+                    <a href='#informations' onClick={handleLog} className=' hover:text-orange focus:text-yellow cursor-pointer'>Informations pratiques</a>
+                    <a href='#menu' onClick={handleLog} className=' hover:text-orange focus:text-yellow cursor-pointer'>Notre carte</a>
+                    <a href='"events' onClick={handleLog} className=' hover:text-orange focus:text-yellow cursor-pointer'>Evénements passés</a>
+                    <a href='#contact' onClick={handleLog} className=' hover:text-orange focus:text-yellow  cursor-pointer'>Contact</a>
                 </nav>
             </header >
         </>

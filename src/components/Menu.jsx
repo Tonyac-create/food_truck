@@ -9,7 +9,7 @@ export default function Menu() {
         <h2 className='text-yellow font-dancing-script text-center text-5xl tracking-wide'>Notre carte</h2>
       </header>
       <div className='xl:flex xl:flex-row'>
-        <section className='flex flex-col items-center md:flex md:flex-row md:gap-8'>
+        <section className='flex flex-col items-center md:flex md:flex-row md:gap-8 lg:gap-20'>
           <article className='flex flex-col'>
             <header>
               <h3 className='text-yellow font-roboto text-center text-2xl tracking-wide my-4'>Nos burgers</h3>
