@@ -29,7 +29,7 @@ Desktop 1
 
 Desktop 2
 
-![](./public/Screenshot 2024-06-05 at 12-20-51 Mon Food-Truck)  
+![](./public/Screenshot_2024_06_Mon_Food_Truck.png)  
 
 
 ## Available Scripts
