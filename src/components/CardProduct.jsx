@@ -47,7 +47,7 @@ export default function CardProduct({ items }) {
           ))
         }
       <div className='hidden lg:block absolute top-[30%] right-0 mx-1'>
-        <img className='size-7 hover:scale-125' onClick={nextSlide} src="../arrow-right-solid.svg" alt="flèche droite" />
+        <img className='size-7 hover:scale-125' onClick={nextSlide} src="../arrow-right-solid-black.svg" alt="flèche droite" />
       </div>
     </div>
   )
