@@ -21,15 +21,13 @@ Accueil mobile
 
 Mobile  
 
-![](./public/Screenshot_Mobile_Mon_Food_Truck.png)  
+![](./public/Screenshot_Mobile.png)  
 
-Desktop 1
+Desktop
 
-![](./public/Screenshot_Desktop_Mon_Food_Truck.png)  
+![](./public/Screenshot_Desktop.png)  
 
-Desktop 2
 
-![](./public/Screenshot_2024_06_Mon_Food_Truck.png)  
 
 
 ## Available Scripts
