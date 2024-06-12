@@ -26,7 +26,7 @@ export default function Header() {
 
     return (
         <>
-            <header className='w-full bg-lightBlack py-2 flex justify-between items-center fixed top-0 z-9999 md:h-16 md:flex-col'>
+            <header className='w-full bg-lightBlack py-2 flex justify-between items-center fixed top-0 z-9999 md:h-16 md:flex-row'>
                 <h1 className="text-yellow text-3xl font-dancing-script font-bold pl-2 mb-auto md:text-5xl md:text-center md:w-full md:my-auto tracking-wide">
                     Mon food truck
                 </h1>

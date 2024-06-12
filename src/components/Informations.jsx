@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Informations() {
     return (
-        <section id='informations' className='m-6 pt-40'>
+        <section id='informations' className='m-6 pt-20'>
             <h2 className='text-yellow font-dancing-script text-center text-5xl tracking-wide mb-4'>Informations pratiques</h2>
             <div className=' md:flex md:flex-row'>
                 <div className='md:flex md:flex-col md:justify-center md:p-4 md:w-1/2 lg:p-6 xl:p-8 2xl:p-12'>
