@@ -12,7 +12,7 @@ It's a responsive showcase site. I have made with React, TailwindCSS and EmailJs
 
 ### Links
 
-- Live Site URL: [https://food-truck-eta.vercel.app/]
+- Live Site URL: [https://food-truck-neon.vercel.app]
 
 ## Screenshot
 Accueil mobile  
